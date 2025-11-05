@@ -14,7 +14,6 @@ func ReservationsOk(route []string, reservations [][2]string) bool {
 	// Verwenden Sie zwei verschachtelte for-Schleifen:
 	// Die äußere Schleife durchläuft alle Reservierungen,
 	// die innere Schleife prüft für jede Reservierung alle anderen Reservierungen auf Überlappung.
-	// begin:solution
 	for i, res1 := range reservations {
 		s1 := res1[0]
 		s2 := res1[1]
@@ -32,5 +31,4 @@ func ReservationsOk(route []string, reservations [][2]string) bool {
 		}
 	}
 	return true
-	// end:solution
 }

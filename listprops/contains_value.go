@@ -8,12 +8,10 @@ func ContainsValue(list []int, v int) bool {
 	// Prüfen Sie in jeder Iteration, ob das aktuelle Element gleich v ist.
 	// Brechen Sie die Schleife ab und liefern true, sobald Sie v gefunden haben.
 	// Alternativ: Sie können auch die CountValue-Funktion verwenden.
-	// begin:solution
 	for _, el := range list {
 		if el == v {
 			return true
 		}
 	}
 	return false
-	// end:solution
 }

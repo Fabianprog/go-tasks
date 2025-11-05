@@ -10,7 +10,6 @@ func ContainsOverlap(list []string, s1, s2, t1, t2 string) bool {
 	// Verwenden Sie vier int-Variablen und bestimmen Sie zunächst die Positionen
 	// der vier Strings in der Liste mittels einer for-Schleife.
 	// Danach prüfen Sie die Positionen auf Überlappung.
-	// begin:solution
 	posS1 := -1
 	posS2 := -1
 	posT1 := -1
@@ -37,5 +36,4 @@ func ContainsOverlap(list []string, s1, s2, t1, t2 string) bool {
 		return true
 	}
 	return false
-	// end:solution
 }

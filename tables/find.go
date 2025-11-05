@@ -8,12 +8,10 @@ func Find(list []string, v string) int {
 	// Verwenden Sie eine for-Schleife, um die Liste zu durchsuchen.
 	// Idealerweise verwenden Sie eine "range"-Schleife, um sowohl
 	// auf die Position als auch auf das Element zuzugreifen.
-	// begin:solution
 	for pos, el := range list {
 		if el == v {
 			return pos
 		}
 	}
-	// end:solution
 	return -1
 }

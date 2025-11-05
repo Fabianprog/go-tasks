@@ -8,8 +8,6 @@ func VLookup(table [][]string, v string, col int) string {
 	// Hinweis:
 	// Verwenden Sie die Funktion GetColumn, um die erste Spalte und die angegebene Spalte zu extrahieren.
 	// Verwenden Sie anschließend die Funktion Lookup, um den gesuchten Wert zu finden.
-	// begin:solution
 	firstCol := GetColumn(table, 0)
 	return Lookup(firstCol, GetColumn(table, col), v)
-	// end:solution
 }

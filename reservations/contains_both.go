@@ -10,7 +10,6 @@ func ContainsBoth(list []string, s1 string, s2 string) bool {
 	// In jeder Iteration prüfen Sie, ob das aktuelle Element gleich s1 oder s2 ist.
 	// Sobald beide gefunden wurden, können Sie true zurückgeben.
 	// Alternativ: Sie können auch die ContainsValue-Funktion aus dem listprops-Paket für diese Aufgabe anpassen und verwenden.
-	// begin:solution
 	foundS1 := false
 	foundS2 := false
 	for _, item := range list {
