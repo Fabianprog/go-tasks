@@ -6,11 +6,6 @@ package reservations
 // Anmerkung: Die Reihenfolge der Strings im Paar ist hier nicht relevant.
 // Anmerkung: An den Grenzen (also s1 == t1 oder s2 == t2) liegt kein Überlappen vor.
 func ContainsOverlap(list []string, s1, s2, t1, t2 string) bool {
-	// Hinweis:
-	// Verwenden Sie vier int-Variablen und bestimmen Sie zunächst die Positionen
-	// der vier Strings in der Liste mittels einer for-Schleife.
-	// Danach prüfen Sie die Positionen auf Überlappung.
-
 	// TODO
 	return false
 }

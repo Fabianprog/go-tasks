@@ -5,10 +5,6 @@ package tables
 // Liefert einen leeren String, falls der gesuchte Wert nicht in der ersten Spalte vorkommt
 // oder falls die gefundene Position nicht in der angegebenen Spalte vorkommt.
 func VLookup(table [][]string, v string, col int) string {
-	// Hinweis:
-	// Verwenden Sie die Funktion GetColumn, um die erste Spalte und die angegebene Spalte zu extrahieren.
-	// Verwenden Sie anschließend die Funktion Lookup, um den gesuchten Wert zu finden.
-
 	// TODO
 	return ""
 }
