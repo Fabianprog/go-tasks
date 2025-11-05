@@ -8,13 +8,7 @@ func GetColumn(table [][]string, col int) []string {
 	// Verwenden Sie eine for-Schleife, um die Zeilen der Tabelle zu durchlaufen.
 	// Greifen Sie in jeder Zeile auf das Element der angegebenen Spalte zu.
 	// Prüfen Sie dabei jeweils die Länge der Zeile, um Indexfehler zu vermeiden.
-	var result []string
-	for _, row := range table {
-		if col < len(row) {
-			result = append(result, row[col])
-		} else {
-			result = append(result, "")
-		}
-	}
-	return result
+
+	// TODO
+	return []string{}
 }

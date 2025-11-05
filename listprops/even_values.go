@@ -6,11 +6,7 @@ func EvenValues(list []int) int {
 	// Verwenden Sie eine for-Schleife, um die Liste zu durchlaufen.
 	// Prüfen Sie in jeder Iteration, ob das aktuelle Element gerade ist.
 	// Erhöhen Sie den Zähler entsprechend.
-	count := 0
-	for _, el := range list {
-		if el%2 == 0 {
-			count++
-		}
-	}
-	return count
+
+	// TODO
+	return 0
 }

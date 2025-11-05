@@ -7,11 +7,7 @@ func OddValues(list []int) int {
 	// Prüfen Sie in jeder Iteration, ob das aktuelle Element ungerade ist.
 	// Erhöhen Sie den Zähler entsprechend.
 	// Alternativ: Sie können auch die EvenValues-Funktion verwenden.
-	count := 0
-	for _, el := range list {
-		if el%2 != 0 {
-			count++
-		}
-	}
-	return count
+
+	// TODO
+	return 0
 }

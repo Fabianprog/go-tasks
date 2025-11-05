@@ -7,11 +7,7 @@ func CountValue(list []int, v int) int {
 	// Verwenden Sie eine for-Schleife, um die Liste zu durchlaufen.
 	// Prüfen Sie in jeder Iteration, ob das aktuelle Element gleich v ist.
 	// Erhöhen Sie den Zähler entsprechend.
-	count := 0
-	for _, el := range list {
-		if el == v {
-			count++
-		}
-	}
-	return count
+
+	// TODO
+	return 0
 }

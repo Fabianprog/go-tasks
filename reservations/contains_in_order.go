@@ -10,21 +10,7 @@ func ContainsInOrder(list []string, s1 string, s2 string) bool {
 	// In jeder Iteration prüfen Sie, ob das aktuelle Element gleich s1 oder s2 ist.
 	// Falls s2 vor s1 gefunden wird, können Sie sofort false zurückgeben.
 	// Sobald beide gefunden wurden, können Sie true zurückgeben.
-	foundS1 := false
-	foundS2 := false
-	for _, item := range list {
-		if item == s1 {
-			foundS1 = true
-		}
-		if item == s2 {
-			if !foundS1 {
-				return false
-			}
-			foundS2 = true
-		}
-		if foundS1 && foundS2 {
-			return true
-		}
-	}
+
+	// TODO
 	return false
 }
