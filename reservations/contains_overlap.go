@@ -5,65 +5,56 @@ package reservations
 // also falls z.B. t1 zwischen s1 und s2 liegt.
 // Anmerkung: Die Reihenfolge der Strings im Paar ist hier nicht relevant.
 // Anmerkung: An den Grenzen (also s1 == t1 oder s2 == t2) liegt kein Überlappen vor.
+
 func ContainsOverlap(list []string, s1, s2, t1, t2 string) bool {
-	eins := false
-	zwei := false
-	einseins := false
-	zweizwei := false
-	var higher1 int
-	var higher2 int
-	var lower1 int
-	var lower2 int
-	var ss1 int
-	var ss2 int
-	var tt1 int
-	var tt2 int
+	var ss1, ss2, tt1, tt2 int
+	found := 0
 
 	for i := 0; i < len(list); i++ {
 		if list[i] == s1 {
-			eins = true
 			ss1 = i
+			found++
 		}
 		if list[i] == s2 {
-			zwei = true
 			ss2 = i
+			found++
 		}
 		if list[i] == t1 {
-			einseins = true
 			tt1 = i
+			found++
 		}
 		if list[i] == t2 {
-			zweizwei = true
 			tt2 = i
+			found++
 		}
-
 	}
-	if eins == false ||
-		zwei == false ||
-		einseins == false ||
-		zweizwei == false {
+	if found < 4 {
 		return false
 	}
-	if ss1 > ss2 {
-		higher1 = ss1
-	} else {
-		higher1 = ss2
-	}
-	if tt1 > tt2 {
-		higher2 = tt1
-	} else {
-		higher2 = tt2
-	}
-	if ss1 <= ss2 {
-		lower1 = ss1
-	} else {
-		lower1 = ss2
-	}
-	if tt1 <= tt2 {
-		lower2 = tt1
-	} else {
-		lower2 = tt2
-	}
-	if lower1 && higher1 
 
+	// Intervallgrenzen berechnen
+	lower1 := min(ss1, ss2)
+	higher1 := max(ss1, ss2)
+	lower2 := min(tt1, tt2)
+	higher2 := max(tt1, tt2)
+
+	// Kein Überlappen, wenn eines Intervall komplett vor dem anderen liegt
+	if higher1 <= lower2 || higher2 <= lower1 {
+		return false
+	}
+	return true
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
